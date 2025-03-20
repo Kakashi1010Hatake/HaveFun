@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="CSS_Files/Log_In_Page.css">
+</head>
+<body>
+    <form class="myForm">
+        <div class="content">
+            <div class="group">
+                <label><h1>Please Enter Your <br> Information <span>Here</span></h1></label>
+                <div class="container">
+                    <input class="input1" type="text" name="user" required>
+                    <div class="text">User Name</div>
+                </div>
+                <div class="container">
+                    <input class="input2" type="password" name="pass" required>
+                    <div class="text">Password</div>
+                </div>
+                <!-- <p class="P02">The Password is not Correct.</p> -->
+                <h1 class="text"></h1>
+                <div class="submit">
+                    <input onclick="myFunction()" class="btn" type="submit">
+                </div>
+            </div>
+        </div>
+    </form>
+    <p class="P01">The Username is not Correct.</p>
+
+    <script>
+        function myFunction() {
+            let myForm = document.querySelector(".myForm");
+            // Get the value of the input field with class="input1"
+            let userName = document.querySelector(".input1").value;
+            let pass = document.querySelector(".input2").value;
+            // let input__ = document.querySelector("input");
+            // If useName & password is Correct
+            if (userName == "Sex" && pass == "fuckme") {
+                myForm.setAttribute("Action", "Main.html");
+            }
+            // else{
+            //     input__.style.borderColor = "red";
+            // }
+            // else if (userName != "Jad"){
+            //     P01.style.display = "block";
+            // }
+
+            // if((myForm.hasAttribute("Action"))){
+            //     P01.style.display = "none";
+            // }
+            // else{
+            // }
+        }
+    </script>
+</body>
+</html>
