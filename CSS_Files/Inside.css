@@ -1,0 +1,634 @@
+/* -------------------------------------------------------Global Rules-------------------------------------------------------- */
+/* -------------------------------------------------------Global Rules-------------------------------------------------------- */
+/* -------------------------------------------------------Global Rules-------------------------------------------------------- */
+:root{
+    --basicColor: rgb(248, 152, 30);
+    --menuColor: rgb(19, 19, 19, 0.8);
+    --headerColor: rgb(19, 19, 19, 0.8);
+    --innerColor: rgba(165, 165, 165);
+    --basicFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(19, 19, 19);
+}
+
+/* -------------------------------------------------------HEADER-------------------------------------------------------- */
+/* -------------------------------------------------------HEADER-------------------------------------------------------- */
+header{
+    background: var(--headerColor);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 0 35px;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 2;
+    transition: 0.45s;
+}
+.logo p{
+    font-size: 30px;
+    font-family: var(--basicFont);
+}
+.logo span{
+    background: var(--basicColor);
+    border-radius: 7px;
+}
+.close_btn{
+    display: none;
+}
+.mine{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 25px;
+}
+.log{
+    width: 35px;
+    height: 35px;
+}
+.log i{
+    font-size: 40px;
+    color: white;
+}
+.user{
+    display: none;
+}
+nav .ul > li{
+    list-style: none;
+    margin: 0 20px;
+    padding: 5px;
+
+    position: relative;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: var(--basicFont);
+}
+nav ul li ul{
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+nav ul li ul li{
+    list-style: none;
+}
+nav ul li ul li:hover{
+    background: var(--basicColor);
+    border-radius: 7px;
+}
+.clicked{
+    display: block;
+}
+nav ul li ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+
+/* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
+/* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
+.BG_01{
+    background-image: url(../_Pic/02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    /* margin-bottom: 75px; */
+    box-shadow: 0px 30px 50px
+}
+
+/* -------------------------------------------------------UP-BUTTON-------------------------------------------------------- */
+/* -------------------------------------------------------UP-BUTTON-------------------------------------------------------- */
+.btn{
+    position: fixed;
+    bottom: 17px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background: var(--basicColor);
+    border-radius: 18px;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    padding: 8px 2px;
+    box-sizing: border-box;
+    z-index: 2;
+
+    display: none;
+}
+.btn i{
+    font-size: 45px;
+}
+
+/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
+/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
+.content{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 55px;
+    
+    padding-top: 125px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+}
+.video .label{
+    width: 100%;
+    height: 35px;
+    background: var(--basicColor);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-family: var(--basicFont);
+}
+
+/* -------------------------------------------------------NUMBER-------------------------------------------------------- */
+/* -------------------------------------------------------NUMBER-------------------------------------------------------- */
+.number{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: auto;
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.number div{
+    width: 40px;
+    height: 40px;
+    background: black;
+    
+    margin: 5px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid white;
+}
+.number div a{
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+.number div:hover{
+    background: white;
+    border: 3px solid black;
+}
+.number div:hover a{
+    color: black;
+}
+
+/* -------------------------------------------------------FOOTER-------------------------------------------------------- */
+/* -------------------------------------------------------FOOTER-------------------------------------------------------- */
+footer{
+    width: 100%;
+    height: 60px;
+    background: var(--basicColor);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -------------------------------------------------------Devices-------------------------------------------------------- */
+/* -------------------------------------------------------Devices-------------------------------------------------------- */
+/* -------------------------------------------------------Devices-------------------------------------------------------- */
+
+
+/* ----------------S24 Ultra Screen---------------- */
+/* ----------------S24 Ultra Screen---------------- */
+@media (min-width: 1440px) and (max-width: 1441px) {
+    .BG_01{
+        height: 1000px;
+    }
+    header{
+        height: 275px;
+        padding: 0 55px;
+    }
+    .logo p{
+        font-size: 120px;
+    }
+    .logo span{
+        border-radius: 30px;
+    }
+    .inside .pic{
+        width: 850px;
+        height: 1250px;
+    }
+    .inside .photo{
+        height: 100%;
+    }
+    .inside .desc{
+        width: 100%;
+        margin-top: 750px;
+    }
+    .desc p{
+        font-size: 150px;
+        text-align: center;
+        margin-top: 200px;
+    }
+    .inside_name{
+        width: 850px;
+        height: 100px;
+        font-size: 75px;
+        margin-bottom: 100px;
+    }
+    .sidebar{
+        width: 75%;
+        height: 100vh;
+        background: var(--menuColor);
+        backdrop-filter: blur(5px);
+
+        box-sizing: border-box;
+        padding: 25px 25px 55px;
+
+        position: absolute;
+        top: 0;
+        left: -75%;
+
+        overflow: scroll;
+
+        transition: 0.45s;
+    }
+    .ul{
+        display:grid;
+        grid-gap: 125px;
+
+        margin-top: 250px;
+    }
+    .close_btn{
+        display:block;
+        color: white;
+
+        position: fixed;
+        right: 75px;
+
+        opacity: 0;
+
+        transition: 0.25s;
+    }
+    .close_btn i{
+        font-size: 125px;
+    }
+    .user{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+
+        background-image: url(../_Pic/15898.jfif);
+        background-size: cover;
+        background-position-y: 160px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 45px;
+        font-family: var(--basicFont);
+    }
+    .log i{
+        font-size: 150px;
+        color: white;
+    }
+    .mine{
+        margin-top: 75px;
+        margin-bottom: 20px;
+        padding: 0 200px 0px 100px;
+    }
+    nav .ul > li{
+        margin-bottom: 15px;
+        border-bottom: 0.5px solid white;
+    }
+    .homy{
+        display: none;
+    }
+    nav .ul > li:nth-child(6){
+        border-bottom: 0px solid white;
+    }
+
+/* this was for the sub-menu of Movies */
+    /* nav ul li ul{
+        background: var(--innerColor);
+        backdrop-filter: blur(5px);
+    
+        padding: 5px 25px;
+
+        display: none;
+    } */
+
+    nav ul li a{
+        font-size: 120px;
+    }
+    .logOut{
+        display: none;
+    }
+
+    footer{
+        height: 200px;
+        font-size: 55px;
+    }
+
+/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
+/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
+    .content{
+        grid-template-columns: 100%;
+    }
+    iframe{
+        width: 1050px;
+        height: 600px;
+    }
+    .video .label{
+        width: 100%;
+        height: 75px;
+        background: var(--basicColor);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-size: 55px;
+        font-family: var(--basicFont);
+    }
+    .btn{
+        position: fixed;
+        bottom: 75px;
+        right: 25px;
+        width: 150px;
+        height: 150px;
+        background: var(--basicColor);
+        border-radius: 45px;
+        border: none;
+        color: white;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+        padding: 8px 2px;
+        box-sizing: border-box;
+        z-index: 2;
+    
+        display: none;
+    }
+    .btn i{
+        margin-top: 25px;
+        font-size: 100px;
+    }
+
+    .number div{
+        width: 125px;
+        height: 125px;
+    }
+    .number div a{
+        font-size: 75px;
+    }
+}
+
+/* ----------------Small Screen---------------- */
+/* ----------------Small Screen---------------- */
+@media (max-width: 400px) {
+    header{
+        padding: 0 15px;
+    }
+    .sidebar{
+        width: 75%;
+        height: 100vh;
+        background: var(--menuColor);
+        backdrop-filter: blur(5px);
+
+        box-sizing: border-box;
+        padding: 25px 0px;
+
+        position: absolute;
+        top: 0;
+        left: -75%;
+
+        overflow: scroll;
+
+        transition: 0.45s;
+    }
+    .close_btn{
+        width: 25px;
+        height: 25px;
+        display: block;
+        color: white;
+
+        position: fixed;
+        right: 25px;
+
+        opacity: 0;
+
+        transition: 0.25s;
+    }
+    .user{
+        width: 75px;
+        height: 75px;
+        background: white;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 45px;
+        font-family: var(--basicFont);
+    }
+    .mine{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 35px;
+    }
+    nav .ul > li{
+        margin-bottom: 15px;
+        border-bottom: 0.5px solid white;
+    }
+    nav .ul > li:nth-child(6){
+        border-bottom: 0px solid white;
+    }
+    nav ul li ul{
+        background: var(--innerColor);
+        backdrop-filter: blur(5px);
+
+        padding: 5px 25px;
+
+        display: none;
+    }
+    nav ul li a{
+        font-size: 32px;
+    }
+    .logOut{
+        display: none;
+    }
+    .alphapet{
+        height: 350px;
+    }
+    .BG_01{
+        background-size: contain;
+        height: 250px;
+    }
+/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
+/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
+    .container{
+        grid-template-columns: 100%;
+    }
+}
+
+
+/* ----------------Medium Screen---------------- */
+/* ----------------Medium Screen---------------- */
+@media (min-width: 401px) and (max-width: 750px) {
+    header{
+        padding: 0 15px;
+    }
+    .sidebar{
+        width: 35%;
+        height: 100vh;
+        background: var(--menuColor);
+        backdrop-filter: blur(5px);
+
+        box-sizing: border-box;
+        padding: 25px 0px;
+
+        position: absolute;
+        top: 0;
+        left: -50%;
+
+        overflow: scroll;
+
+        transition: 0.45s;
+    }
+    .close_btn{
+        width: 25px;
+        height: 25px;
+        display: block;
+        color: white;
+
+        position: fixed;
+        right: 25px;
+
+        opacity: 0;
+
+        transition: 0.25s;
+    }
+    .user{
+        width: 75px;
+        height: 75px;
+        background: white;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 45px;
+        font-family: var(--basicFont);
+    }
+    .mine{
+        margin-bottom: 20px;
+    }
+    nav .ul > li{
+        margin-bottom: 15px;
+        border-bottom: 0.5px solid white;
+    }
+    nav .ul > li:nth-child(6){
+        border-bottom: 0px solid white;
+    }
+    nav ul li ul{
+        background: var(--innerColor);
+        backdrop-filter: blur(5px);
+
+        margin-top: 15px;
+        padding: 5px 25px;
+
+        display: none;
+    }
+    .logOut{
+        display: none;
+    }
+    .BG_01{
+        height: 300px;
+    }
+/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
+/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
+    .container{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+
+/* ----------------Big Screen---------------- */
+/* ----------------Big Screen---------------- */
+@media (min-width: 751px) and (max-width: 1439px), (min-width: 1442px) and (max-width: 5000px) {
+    nav ul{
+        display: flex;
+    }
+    nav .ul > li::before{
+        content: "";
+        width: 0;
+        height: 2.5px;
+        background: var(--basicColor);
+
+        position: absolute;
+        top: 27px;
+        left: 0;
+
+        transition: 0.25s;
+    }
+    nav .ul > li:hover::before{
+        width: 100%;
+    }
+    nav ul li ul{
+        background: var(--innerColor);
+        position: absolute;
+        top: 50px;
+        width: 100px;
+        padding: 5px;
+        display: none;
+    }
+    nav ul li ul li{
+        padding: 5px;
+    }
+    .log{
+        display: none;
+    }
+    .TAB{
+        background: var(--basicColor);
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 7px;
+    }
+}
