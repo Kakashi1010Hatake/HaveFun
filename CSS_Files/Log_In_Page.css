@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background: rgb(204, 199, 195); */
+    background-image: url(../_Pic/Login_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.content .group{
+    width: fit-content;
+    margin-top: 150px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.group h1{
+    font-family: poppins, sans-serif;
+    font-size: 25px;
+}
+.group h1 span{
+    color: rgb(248, 152, 30);
+    text-decoration: underline;
+}
+.group .container{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 350px;
+    height: 70px;
+    border-radius: 25px;
+}
+.group .container input{
+    width: 350px;
+    height: 70px;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 1px solid rgb(53, 53, 53, 0.25);
+    /* background-color: rgb(53, 53, 53); */
+    background: rgb(204, 199, 195);
+
+    color: rgb(248, 152, 30);
+    outline: none;
+    font-size: 25px;
+    font-family: poppins, sans-serif;
+}
+.group .container .text{
+    min-width: 75px;
+    min-height: 20px;
+    /* background: rgb(53, 53, 53); */
+    background: rgb(204, 199, 195);
+
+    padding: 0 5px;
+
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+
+    position: absolute;
+    left: 30px;
+    
+    color: grey;
+    font-size: 25px;
+    font-family: poppins, sans-serif;
+    text-transform: uppercase;
+    
+    transition: 0.15s;
+}
+.group .btn{
+    width: 175px;
+    height: 50px;
+    background: rgb(53, 53, 53);
+    color: grey;
+    border: none;
+    border-radius: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: poppins, sans-serif;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.556);
+    margin-top: -75px;
+    cursor: pointer;
+    transition: 0.45s;
+}
+.P01{
+    font-family: poppins, sans-serif;
+    color: red;
+    position: absolute;
+    top: 318px;
+    left: 165px;
+    font-size: 14px;
+    display: none;
+}
+/* .P02{
+    font-family: poppins, sans-serif;
+    color: red;
+    position: absolute;
+    top: 272px;
+    left: 15px;
+    font-size: 14px;
+} */
+/* ------------------Effecs------------------ */
+/* ------------------Effecs------------------ */
+/* ------------------Effecs------------------ */
+.btn:hover{
+    background: rgb(248, 152, 30);
+    color: black;
+}
+.container .input1:valid ~ div,
+.container .input1:focus ~ div
+{
+    transform-origin: left;
+    transform: translateY(-35px);
+    font-size: 15px;
+    color: rgb(248, 152, 30);
+    border-left: 2px solid rgb(242, 101, 101);
+    border-right: 2px solid rgb(242, 101, 101);
+    background: rgb(204, 199, 195);
+}
+.container .input2:valid ~ div,
+.container .input2:focus ~ div
+{
+    transform-origin: left;
+    transform: translateY(-35px);
+    font-size: 15px;
+    color: rgb(248, 152, 30);
+    border-left: 2px solid rgb(248, 152, 30);
+    border-right: 2px solid rgb(248, 152, 30);
+}
+.container input:focus{
+    border: 2px solid rgb(248, 152, 30);
+}
+/* ---------------------Devices---------------------- */
+/* ---------------------Devices---------------------- */
+/* ---------------------Devices---------------------- */
+/* ---------------------Devices---------------------- */
+@media (max-width: 400px) {
+    .content .group{
+        margin-top: 125px;
+        margin-left: 35px;
+    }
+    .group .container{
+        width: 250px;
+        height: 50px;
+    }
+    .group .container input{
+        width: 250px;
+        height: 50px;
+    }
+    .group .container .text{
+        min-width: 75px;
+        min-height: 20px;
+        font-size: 20px;
+    }
+    .container .input1:valid ~ div,
+    .container .input1:focus ~ div
+    {
+        transform: translateY(-25px);
+        font-size: 15px;
+    }
+    .container .input2:valid ~ div,
+    .container .input2:focus ~ div
+    {
+        transform: translateY(-25px);
+        font-size: 15px;
+    }
+    .content .group{
+        gap: 25px;
+    }
+}
+@media (min-width: 400px) and (max-width: 750px){
+    .content .group{
+        margin-top: 25px;
+        margin-left: 35px;
+    }
+    .group .container{
+        width: 250px;
+        height: 50px;
+    }
+    .group .container input{
+        width: 250px;
+        height: 50px;
+    }
+    .group .container .text{
+        min-width: 75px;
+        min-height: 20px;
+        font-size: 20px;
+    }
+    .container .input1:valid ~ div,
+    .container .input1:focus ~ div
+    {
+        transform: translateY(-25px);
+        font-size: 15px;
+    }
+    .container .input2:valid ~ div,
+    .container .input2:focus ~ div
+    {
+        transform: translateY(-25px);
+        font-size: 15px;
+    }
+    .content .group{
+        gap: 25px;
+    }
+}
+
+/* S24 Ultra */
+
+@media (min-width: 1440px) and (max-width: 1441px) {
+    .content .group{
+        margin-top: 825px;
+        margin-left: 335px;
+        scale: 225%;
+    }
+}
