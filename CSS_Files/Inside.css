@@ -101,7 +101,7 @@ nav ul li ul li:not(:last-child){
 /* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
 /* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
 .BG_01{
-    background-image: url(../_Pic/02.jpg);
+    background-image: url(../Pic/02.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -311,7 +311,7 @@ footer{
         height: 75px;
         border-radius: 50%;
 
-        background-image: url(../_Pic/15898.jfif);
+        background-image: url(../Pic/15898.jfif);
         background-size: cover;
         background-position-y: 160px;
 

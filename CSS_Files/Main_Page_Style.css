@@ -97,6 +97,17 @@ nav ul li ul li:not(:last-child){
     margin-bottom: 15px;
 }
 
+
+/* -------------------------------------------------------VIDEO-------------------------------------------------------- */
+/* -------------------------------------------------------VIDEO-------------------------------------------------------- */
+.bg-video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -2;
+}
+
 /* -------------------------------------------------------FOOTER-------------------------------------------------------- */
 /* -------------------------------------------------------FOOTER-------------------------------------------------------- */
 footer{
@@ -180,7 +191,7 @@ footer{
         height: 75px;
         border-radius: 50%;
 
-        background-image: url(../_Pic/15898.jfif);
+        background-image: url(../Pic/15898.jfif);
         background-size: cover;
         background-position-y: 160px;
 
@@ -281,7 +292,7 @@ footer{
         height: 75px;
         border-radius: 50%;
 
-        background-image: url(../_Pic/15898.jfif);
+        background-image: url(../Pic/15898.jfif);
         background-size: cover;
         background-position-y: 160px;
 
@@ -372,7 +383,7 @@ footer{
         height: 75px;
         border-radius: 50%;
 
-        background-image: url(../_Pic/15898.jfif);
+        background-image: url(../Pic/15898.jfif);
         background-size: cover;
         background-position-y: 160px;
 
@@ -449,7 +460,9 @@ footer{
         box-sizing: border-box;
         border-radius: 7px;
     }
-
+    .bg-video .source{
+        src: "Pic/P.mp4";
+    }    
     footer{
         height: 50px;
         font-size: 13px;

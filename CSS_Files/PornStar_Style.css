@@ -172,10 +172,6 @@ nav ul li ul li:not(:last-child){
 .container{
     margin: auto;
 }
-.video img{
-    width: 315px;    
-    height: 180px;
-}
 .video .label{
     width: 100%;
     height: 35px;
