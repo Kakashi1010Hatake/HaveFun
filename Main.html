@@ -44,7 +44,6 @@
     </header>
 
     <video autoplay loop muted plays-inline class="bg-video">
-        <source class="source" src="" type="video/mp4">
     </video>
 
     <footer>Copyright &copy; by Uchiha Sasuke. <br> All Rights Reserved</footer>
@@ -66,10 +65,18 @@
         let height = window.screen.height;
 
         if(width >= 751 && width <= 1439 || width >= 1442 && width <= 5000) {
-            document.querySelector(".source").setAttribute("src", "Pic/P.mp4");
+            let video = document.querySelector(".bg-video");
+            let source = document.createElement("source");
+            source.setAttribute("src", "Pic/M.mp4");
+            source.setAttribute("type", "video/mp4");
+            video.appendChild(source);
         }
         if(width >= 1440 && width <= 1441) {
-            document.querySelector(".source").setAttribute("src", "Pic/M.mp4");
+            rySelector(".bg-video");
+            let source = document.createElement("source");
+            source.setAttribute("src", "Pic/P.mp4");
+            source.setAttribute("type", "video/mp4");
+            video.appendChild(source);
         }
 
         // document.querySelector(".c_tab").addEventListener('click', display_First);
