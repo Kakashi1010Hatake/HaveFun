@@ -43,6 +43,10 @@
         </section>
     </header>
 
+    <video autoplay loop muted plays-inline class="bg-video">
+        <source class="source" src="" type="video/mp4">
+    </video>
+
     <footer>Copyright &copy; by Uchiha Sasuke. <br> All Rights Reserved</footer>
 
     <script>
@@ -56,6 +60,16 @@
         function CloseMenu() {
             close.style.opacity = 0;
             sideBar.style.left = "-75%";
+        }
+
+        let width = window.screen.width;
+        let height = window.screen.height;
+
+        if(width >= 751 && width <= 1439 || width >= 1442 && width <= 5000) {
+            document.querySelector(".source").setAttribute("src", "Pic/P.mp4");
+        }
+        if(width >= 1440 && width <= 1441) {
+            document.querySelector(".source").setAttribute("src", "Pic/M.mp4");
         }
 
         // document.querySelector(".c_tab").addEventListener('click', display_First);
