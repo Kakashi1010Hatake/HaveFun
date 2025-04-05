@@ -549,6 +549,10 @@ footer{
 /* ----------------Big Screen---------------- */
 /* ----------------Big Screen---------------- */
 @media (min-width: 751px) and (max-width: 1439px), (min-width: 1442px) and (max-width: 5000px) {
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
     nav ul{
         display: flex;
     }
