@@ -23,20 +23,17 @@ header{
     background: var(--headerColor);
     backdrop-filter: blur(5px);
     width: 100%;
-    height: 75px;
+    height: 10%;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
     box-sizing: border-box;
     padding: 0 35px;
 
     position: fixed;
     top: 0;
-}
-.world{
-    height: 55px;
 }
 .logo p{
     font-size: 30px;
@@ -46,13 +43,13 @@ header{
     background: var(--basicColor);
     border-radius: 7px;
 }
-.close_btn{
-    display: none;
-}
+
+/* -------------------------------------------------------SIDEBAR-------------------------------------------------------- */
+/* -------------------------------------------------------SIDEBAR-------------------------------------------------------- */
 .mine{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
     margin-bottom: 20px;
     padding: 0 25px;
@@ -98,12 +95,14 @@ nav ul li ul li:hover{
 nav ul li ul li:not(:last-child){
     margin-bottom: 15px;
 }
-
+.close_btn{
+    display: none;
+}
 /* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
 /* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
 .bg{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 /* -------------------------------------------------------CONTENT-------------------------------------------------------- */
 /* -------------------------------------------------------CONTENT-------------------------------------------------------- */
@@ -134,7 +133,6 @@ nav ul li ul li:not(:last-child){
     font-size: 22px;
     font-family: var(--basicFont);
 }
-
 /* -------------------------------------------------------NUMBER-------------------------------------------------------- */
 /* -------------------------------------------------------NUMBER-------------------------------------------------------- */
 .number{
@@ -199,7 +197,6 @@ nav ul li ul li:not(:last-child){
 .btn i{
     font-size: 45px;
 }
-
 /* -------------------------------------------------------FOOTER-------------------------------------------------------- */
 /* -------------------------------------------------------FOOTER-------------------------------------------------------- */
 footer{
@@ -220,168 +217,10 @@ footer{
 /* -------------------------------------------------------Devices-------------------------------------------------------- */
 /* -------------------------------------------------------Devices-------------------------------------------------------- */
 
-/* ----------------S24 Ultra---------------- */
-/* ----------------S24 Ultra---------------- */
-@media (min-width: 1440px) and (max-width: 1441px) {
-    header{
-        height: 275px;
-        padding: 0 55px;
-    }
-    .logo p{
-        font-size: 120px;
-    }
-    .logo span{
-        border-radius: 30px;
-    }
-    .sidebar{
-        width: 75%;
-        height: 100vh;
-        background: var(--menuColor);
-        backdrop-filter: blur(5px);
-
-        box-sizing: border-box;
-        padding: 25px 25px 55px;
-
-        position: absolute;
-        top: 0;
-        left: -75%;
-
-        overflow: scroll;
-
-        transition: 0.45s;
-    }
-    .ul{
-        display:grid;
-        grid-gap: 125px;
-
-        margin-top: 250px;
-    }
-    .close_btn{
-        display:block;
-        color: white;
-
-        position: fixed;
-        right: 75px;
-
-        opacity: 0;
-
-        transition: 0.25s;
-    }
-    .close_btn i{
-        font-size: 125px;
-    }
-    .log i{
-        font-size: 150px;
-        color: white;
-    }
-    .mine{
-        margin-top: 75px;
-        margin-bottom: 20px;
-        padding: 0 200px 0px 100px;
-    }
-    nav .ul > li{
-        margin-bottom: 15px;
-        border-bottom: 0.5px solid white;
-    }
-    .homy{
-        display: none;
-    }
-    nav .ul > li:nth-child(6){
-        border-bottom: 0px solid white;
-    }
-
-/* this was for the sub-menu of Movies */    
-    /* nav ul li ul{
-        background: var(--innerColor);
-        backdrop-filter: blur(5px);
-    
-        padding: 5px 25px;
-
-        display: none;
-    } */
-    
-    nav ul li a{
-        font-size: 120px;
-    }
-    .logOut{
-        display: none;
-    }
-    footer{
-        height: 200px;
-        font-size: 55px;
-    }
-
-/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
-/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
-    .content{ 
-        grid-template-columns: 100%;
-    }
-    iframe{
-        width: 1050px;
-        height: 600px;
-    }
-    .video .label{
-        width: 100%;
-        height: 75px;
-        background: var(--basicColor);
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        font-size: 55px;
-        font-family: var(--basicFont);
-    }
-    .btn{
-        position: fixed;
-        bottom: 75px;
-        right: 25px;
-        width: 150px;
-        height: 150px;
-        background: var(--basicColor);
-        border-radius: 45px;
-        border: none;
-        color: white;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        cursor: pointer;
-        padding: 8px 2px;
-        box-sizing: border-box;
-        z-index: 2;
-    
-        display: none;
-    }
-    .btn i{
-        margin-top: 25px;
-        font-size: 100px;
-    }
-
-    .number div{
-        width: 125px;
-        height: 125px;
-    }
-    .number div a{
-        font-size: 75px;
-    }
-
-    /* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
-    /* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
-    .bg{
-        background-size: 100%;
-        height: 900px;
-        width: 100%;
-    }
-}
-
-
-
 
 /* ----------------Small Screen---------------- */
 /* ----------------Small Screen---------------- */
-@media (max-width: 400px) {
-    header{
-        padding: 0 15px;
-    }
+@media (max-width: 600px) {
     .sidebar{
         width: 75%;
         height: 100vh;
@@ -462,92 +301,10 @@ footer{
 }
 
 
-/* ----------------Medium Screen---------------- */
-/* ----------------Medium Screen---------------- */
-@media (min-width: 401px) and (max-width: 750px) {
-    header{
-        padding: 0 15px;
-    }
-    .sidebar{
-        width: 35%;
-        height: 100vh;
-        background: var(--menuColor);
-        backdrop-filter: blur(5px);
-
-        box-sizing: border-box;
-        padding: 25px 0px;
-
-        position: absolute;
-        top: 0;
-        left: -50%;
-
-        overflow: scroll;
-
-        transition: 0.45s;
-    }
-    .close_btn{
-        width: 25px;
-        height: 25px;
-        display: block;
-        color: white;
-
-        position: fixed;
-        right: 25px;
-
-        opacity: 0;
-
-        transition: 0.25s;
-    }
-    .user{
-        width: 75px;
-        height: 75px;
-        background: white;
-        border-radius: 50%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        font-size: 45px;
-        font-family: var(--basicFont);
-    }
-    .mine{
-        margin-bottom: 20px;
-    }
-    nav .ul > li{
-        margin-bottom: 15px;
-        border-bottom: 0.5px solid white;
-    }
-    nav .ul > li:nth-child(6){
-        border-bottom: 0px solid white;
-    }
-    nav ul li ul{
-        background: var(--innerColor);
-        backdrop-filter: blur(5px);
-        
-        margin-top: 15px;
-        padding: 5px 25px;
-
-        display: none;
-    }
-    .logOut{
-        display: none;
-    }
-    .bg{
-        height: 273px;
-        background-size: 100%;
-    }
-/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
-/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
-    .content{ 
-        grid-template-columns: 50% 50%;
-    }
-}
-
 
 /* ----------------Big Screen---------------- */
 /* ----------------Big Screen---------------- */
-@media (min-width: 751px) and (max-width: 1439px), (min-width: 1442px) and (max-width: 5000px) {
+@media (min-width: 1200px) {
     nav ul{
         display: flex;
     }
