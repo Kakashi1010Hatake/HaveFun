@@ -3,7 +3,7 @@ class SpecialHeader2 extends HTMLElement {
         this.innerHTML = `
         <header>
             <div class="logo">
-            <p onclick="OpenMenu()">Porn<span>Tube</span></p>
+            <p onclick="OpenMenu()">Have<span>Fun</span></p>
         </div>
             <div class="close_btn"><i class="material-icons" onclick="CloseMenu()">close</i></div>
             <section class="sidebar">
@@ -44,7 +44,8 @@ class SpecialHeader2 extends HTMLElement {
 customElements.define('special-header2', SpecialHeader2);
 
 
-document.querySelector('.light').style.background = "rgb(248, 152, 30)";
+// document.querySelector('.light').style.background = "rgb(248, 152, 30)";
+document.querySelector('.light').style.background = "rgb(170, 28, 28)";
 document.querySelector('.light').style.filter = "drop-shadow(5px 5px 5px black)";
 
 let sideBar = document.querySelector(".sidebar");

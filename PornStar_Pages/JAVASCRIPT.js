@@ -3,7 +3,7 @@ class SpecialHeader extends HTMLElement {
         this.innerHTML = `
         <header>
             <div class="logo">
-                <p onclick="OpenMenu()">Porn<span>Tube</span></p>
+                <p onclick="OpenMenu()">Have<span>Fun</span></p>
             </div>
             <div class="close_btn"><i class="material-icons" onclick="CloseMenu()">close</i></div>
             <div class="playMe" onclick="PlayWithMe()"><img src="01.png"></div>
@@ -53,7 +53,7 @@ class SpecialHeader2 extends HTMLElement {
         this.innerHTML = `
         <header>
             <div class="logo">
-                <p onclick="OpenMenu()">Porn<span>Tube</span></p>
+                <p onclick="OpenMenu()">Have<span>Fun</span></p>
             </div>
             <div class="close_btn"><i class="material-icons" onclick="CloseMenu()">close</i></div>
             <section class="sidebar">

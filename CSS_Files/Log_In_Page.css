@@ -22,7 +22,8 @@ body{
     font-size: 25px;
 }
 .group h1 span{
-    color: rgb(248, 152, 30);
+    /* color: rgb(248, 152, 30); */
+    color: rgb(170, 28, 28);
     text-decoration: underline;
 }
 .group .container{
