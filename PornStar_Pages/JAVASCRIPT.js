@@ -292,7 +292,8 @@ const fileName = pathName.substring(pathName.lastIndexOf('/') + 1);
 const elementsWithAttribute = document.querySelectorAll('[href]');
 elementsWithAttribute.forEach((element) => {
     if(element.getAttribute("href") == fileName) {
-        element.parentElement.style.background = "rgb(253, 152, 30)";
+        // element.parentElement.style.background = "rgb(253, 152, 30)";
+        element.parentElement.style.background = "rgb(170, 28, 28)";
         element.parentElement.style.filter = "drop-shadow(5px 5px 5px black)";
     }
 });
