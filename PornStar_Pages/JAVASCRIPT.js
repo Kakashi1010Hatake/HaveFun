@@ -272,6 +272,18 @@ class Numbers extends HTMLElement {
         <div>
             <a href="57.html">57</a>
         </div>
+        <div>
+            <a href="58.html">58</a>
+        </div>
+        <div>
+            <a href="59.html">59</a>
+        </div>
+        <div>
+            <a href="60.html">60</a>
+        </div>
+        <div>
+            <a href="61.html">61</a>
+        </div>
     </div>
         `
     }
