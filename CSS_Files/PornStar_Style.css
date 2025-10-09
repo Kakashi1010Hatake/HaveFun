@@ -156,6 +156,7 @@ nav ul li ul li:not(:last-child){
     width: 350px;
     height: 140px;
 }
+
 /* -------------------------------------------------------CONTENT-------------------------------------------------------- */
 /* -------------------------------------------------------CONTENT-------------------------------------------------------- */
 .content{
@@ -266,248 +267,13 @@ footer{
     align-items: center;
 }
 
-
 /* -------------------------------------------------------Devices-------------------------------------------------------- */
 /* -------------------------------------------------------Devices-------------------------------------------------------- */
 /* -------------------------------------------------------Devices-------------------------------------------------------- */
-
-/* ----------------S24 Ultra---------------- */
-/* ----------------S24 Ultra---------------- */
-@media (min-width: 1440px) and (max-width: 1441px) {
-    header{
-        height: 275px;
-        padding: 0 55px;
-    }
-    .logo p{
-        font-size: 120px;
-    }
-    .logo span{
-        border-radius: 30px;
-    }
-    .sidebar{
-        width: 75%;
-        height: 100vh;
-        background: var(--menuColor);
-        backdrop-filter: blur(5px);
-
-        box-sizing: border-box;
-        padding: 25px 25px 55px;
-
-        position: absolute;
-        top: 0;
-        left: -75%;
-
-        overflow: scroll;
-
-        transition: 0.45s;
-    }
-    .ul{
-        display:grid;
-        grid-gap: 125px;
-
-        margin-top: 250px;
-    }
-    .close_btn{
-        display:block;
-        color: white;
-
-        position: fixed;
-        right: 75px;
-
-        opacity: 0;
-
-        transition: 0.25s;
-    }
-    .close_btn i{
-        font-size: 125px;
-    }
-    .log i{
-        font-size: 150px;
-        color: white;
-    }
-    .mine{
-        margin-top: 75px;
-        margin-bottom: 20px;
-        padding: 0 200px 0px 100px;
-    }
-    nav .ul > li{
-        margin-bottom: 15px;
-        border-bottom: 0.5px solid white;
-    }
-    .homy{
-        display: none;
-    }
-    nav .ul > li:nth-child(6){
-        border-bottom: 0px solid white;
-    }
-
-/* this was for the sub-menu of Movies */    
-    /* nav ul li ul{
-        background: var(--innerColor);
-        backdrop-filter: blur(5px);
-    
-        padding: 5px 25px;
-
-        display: none;
-    } */
-    
-    nav ul li a{
-        font-size: 120px;
-    }
-    .logOut{
-        display: none;
-    }
-    footer{
-        height: 200px;
-        font-size: 55px;
-    }
-
-/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
-/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
-    .content{ 
-        grid-template-columns: 100%;
-        padding-top: 450px;
-    }
-    iframe{
-        width: 1050px;
-        height: 600px;
-    }
-    .video .label{
-        width: 100%;
-        height: 75px;
-        background: var(--basicColor);
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        font-size: 55px;
-        font-family: var(--basicFont);
-    }
-    .btn{
-        position: fixed;
-        bottom: 75px;
-        right: 25px;
-        width: 150px;
-        height: 150px;
-        background: var(--basicColor);
-        border-radius: 45px;
-        border: none;
-        color: white;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        cursor: pointer;
-        padding: 8px 2px;
-        box-sizing: border-box;
-        z-index: 2;
-    
-        display: none;
-    }
-    .btn i{
-        margin-top: 25px;
-        font-size: 100px;
-    }
-
-    .number div{
-        width: 125px;
-        height: 125px;
-    }
-    .number div a{
-        font-size: 75px;
-    }
-
-    /* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
-    /* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
-    .bg{
-        background-size: 100%;
-        height: 900px;
-    }
-    .profile{
-        position: relative;
-        width: auto;
-        height: 276px;
-        display: flex;
-        justify-content: center;
-    }
-    .mask{
-        position: absolute;
-        top: 400px;
-        height: 500px;
-    }
-    .circle{
-        position: absolute;
-        top: 475px;
-        border-radius: 50%;
-        overflow: hidden;
-        width: 600px;
-        height: 600px;
-    }
-    .girl{
-        width: 600px;
-    }
-
-    .playMe{
-        transform: translateX(-45px) translateY(-32px) scale(12%);
-        display: block;
-        color: white;
-        position: fixed;
-        right: -255px;
-    }
-    .creative{
-        width: 80%;
-        height: 75%;
-    
-        display: flex;
-        justify-content: center;
-    }
-    .closyyy{
-        position: fixed;
-        top: 80px;
-        left: 5px;
-        z-index: 5;
-    }
-
-    /*.playWithMe{
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top: 75px;
-        
-        justify-content: center;
-        align-items: center;
-
-        display: none;
-    }
-    .clicky01{
-        position: absolute;
-        opacity: 0.01;
-        top: 25%;
-        width: 350px;
-        height: 75px;
-    }
-    .clicky02{
-        position: absolute;
-        opacity: 0.01;
-        top: 36%;
-        width: 350px;
-        height: 230px;
-    }
-    .clicky03{
-        position: absolute;
-        opacity: 0.01;
-        top: 70%;
-        width: 350px;
-        height: 140px;
-    } */
-
-}
-
-
-
 
 /* ----------------Small Screen---------------- */
 /* ----------------Small Screen---------------- */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     header{
         padding: 0 15px;
     }
@@ -563,7 +329,7 @@ footer{
         margin-bottom: 15px;
         border-bottom: 0.5px solid white;
     }
-    nav .ul > li:nth-child(6){
+    nav .ul > li:nth-child(7){
         border-bottom: 0px solid white;
     }
     nav ul li ul{
@@ -597,14 +363,16 @@ footer{
         height: 276px;
     }
     .playMe{
-        width: 5px;
+        /* width: 5px;
         height: 5px;
         transform: translateX(-45px) translateY(-32px) scale(12%);
         display: block;
         color: white;
     
         position: fixed;
-        right: 25px;
+        right: 25px; */
+
+        opacity: 0;
     }
     .creative{
         width: 80%;
@@ -627,9 +395,10 @@ footer{
 }
 
 
+
 /* ----------------Medium Screen---------------- */
 /* ----------------Medium Screen---------------- */
-@media (min-width: 401px) and (max-width: 750px) {
+@media (min-width: 601px) and (max-width: 1200px) {
     header{
         padding: 0 15px;
     }
@@ -676,14 +445,11 @@ footer{
         font-size: 45px;
         font-family: var(--basicFont);
     }
-    .mine{
-        margin-bottom: 20px;
-    }
     nav .ul > li{
         margin-bottom: 15px;
         border-bottom: 0.5px solid white;
     }
-    nav .ul > li:nth-child(6){
+    nav .ul > li:nth-child(7){
         border-bottom: 0px solid white;
     }
     nav ul li ul{
@@ -695,47 +461,33 @@ footer{
 
         display: none;
     }
-    .logOut{
-        display: none;
-    }
     .mask{
         width: 65%;
 
-        top: 110px;
+        top: 29.5%;
     }
     .circle{
         width: 200px;
         height: 200px;
 
-        top: 145px;
-        left: 117px;
+        top: 50%;
+        transform: scale(120%);
     }
     .bg{
         height: 273px;
         background-size: 100%;
     }
     .playMe{
-        width: 5px;
+        /* width: 5px;
         height: 5px;
         transform: translateX(-45px) translateY(-32px) scale(12%);
         display: block;
         color: white;
     
         position: fixed;
-        right: 25px;
-    }
-    .creative{
-        width: 80%;
-        height: 75%;
-    
-        display: flex;
-        justify-content: center;
-    }
-    .closyyy{
-        position: fixed;
-        top: 80px;
-        left: 5px;
-        z-index: 5;
+        right: 25px; */
+
+        opacity: 0;
     }
 /* -------------------------------------------------------CONTENT-------------------------------------------------------- */
 /* -------------------------------------------------------CONTENT-------------------------------------------------------- */
@@ -745,9 +497,10 @@ footer{
 }
 
 
+
 /* ----------------Big Screen---------------- */
 /* ----------------Big Screen---------------- */
-@media (min-width: 751px) and (max-width: 1439px), (min-width: 1442px) and (max-width: 5000px) {
+@media (min-width: 1201px) {
     nav ul{
         display: flex;
     }

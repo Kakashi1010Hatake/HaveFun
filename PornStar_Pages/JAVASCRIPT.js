@@ -6,7 +6,7 @@ class SpecialHeader extends HTMLElement {
                 <p onclick="OpenMenu()">Have<span>Fun</span></p>
             </div>
             <div class="close_btn"><i class="material-icons" onclick="CloseMenu()">close</i></div>
-            <div class="playMe" onclick="PlayWithMe()"><img src="01.png"></div>
+            <div class="playMe" onclick="PlayWithMe()"></div>
             <section class="sidebar">
                 <div class="mine">
                     <div class="log">
@@ -28,12 +28,12 @@ class SpecialHeader extends HTMLElement {
                 <nav>
                     <ul class="ul">
                         <li class="homy"><a href="../../Main.html">Home</a></li>
-                        <li><a href="../../Letters_Pages/Letters_Pages - Porn/A_Page.html">PornStar</a></li>
+                        <li><a href="../../Letters_Pages/A_Page.html">PornStar</a></li>
                         <li><a href="../../Collections.html">Collections</a></li>
-                        <li><a href="../../Lesbian.html">Lesbian</a></li>
+                        <li><a href="../../Lesbian/01.html">Lesbian</a></li>
                         <li><a href="../../Masturbation/01.html">Mastrbution</a></li>
                         <li><a href="../../Movies.html">Movies</a></li>
-                        <li class="logOut"><a href="../../index.html">Log Out</a></li>
+                        <li><a href="../../index.html">Log Out</a></li>
                     </ul>
                 </nav>
             </section>
