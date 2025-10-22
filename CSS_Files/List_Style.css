@@ -102,7 +102,6 @@ nav ul li ul li:not(:last-child){
 /* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
 /* -------------------------------------------------------BACKGROUND-------------------------------------------------------- */
 .bg{
-    background-color: red;
     background-size: cover;
     background-position: center;
 }
@@ -112,9 +111,13 @@ nav ul li ul li:not(:last-child){
     width: 100%;
     height: 100%;
 
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    row-gap: 55px;
+    row-gap: 55px; */
     
     padding-top: 125px;
     padding-bottom: 100px;
@@ -237,6 +240,21 @@ footer{
     align-items: center;
 }
 
+.exo-native-widget-5611764-ZAUGw.exo-native-widget .exo-native-widget-outer-container .exo-native-widget-item-container a.exo-native-widget-item .exo-native-widget-item-image-wrapper{
+    opacity: 0;
+}
+.exo-native-widget-item-image{
+    opacity: 0;
+}
+.m5ASETw5{
+    opacity: 0;
+}
+.wps-player__happy-inside-btn-close{
+    opacity: 0;
+}
+#document{
+    opacity: 0;
+}
 
 /* -------------------------------------------------------Devices-------------------------------------------------------- */
 /* -------------------------------------------------------Devices-------------------------------------------------------- */
@@ -317,11 +335,6 @@ footer{
     }
     .bg{
         height: 276px;
-    }
-/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
-/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
-    .content{ 
-        grid-template-columns: 100%;
     }
 }
 
@@ -419,11 +432,6 @@ footer{
         right: 25px; */
 
         opacity: 0;
-    }
-/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
-/* -------------------------------------------------------CONTENT-------------------------------------------------------- */
-    .content{ 
-        grid-template-columns: 50% 50%;
     }
 }
 
